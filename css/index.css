@@ -1,0 +1,312 @@
+a {display: block;
+    color: inherit;
+    text-decoration: none;
+}
+body {color: #333;
+    position: relative;
+}
+
+#wrap {width: 100%;
+    box-sizing: border-box;
+}
+/* =========햄버거메뉴 ==========*/
+.hbg-open {width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 3%;
+    left: 10%;
+    z-index: 100;
+}
+.hbg {position: fixed;
+    z-index: 100;
+    width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    overflow: scroll;
+    left: -300px;
+}
+.close {width: 30px;
+    height: 30px;
+    margin: 40px;
+    margin-left: 80%;
+    padding: 6px;
+}
+/* 메뉴 */
+.hbg-mainmenu {width: 100%;}
+.hbg-mainmenu>li {padding: 0 20px;}
+.hbg-mainmenu>li>a {padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hbg-submenu>li>a {padding: 10px 60px;
+    color: #9f9f9f;
+    font-weight: 500;
+}
+.hbg-submenu>li>a:hover {color: #333;}
+
+/* 아이콘 메뉴 */
+.hbg-icon {display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 30px 10px;
+}
+.hbg-icon>li {width: 33.3%;}
+.hbg-icon>li>a {font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+}
+.hbg-icon>li>a img {width: 70px;
+}
+.hbg-icon>li>a p {margin-top: 10px;
+    color: #9f9f9f;
+}
+
+/* =========gnb ========*/
+.header_bg {width: 100%;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 2px 10px #d5d5d5;
+}
+header {width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.h-logo {width: 30%;
+    height: 100%;
+    background: url(../img/로고.jpg);
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+nav {width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.mainmenu {width: 80%;
+    display: flex;
+}
+.mainmenu>li {width: 20%;}
+.mainmenu>li>a {text-align: center;
+    padding: 10px;
+    font-weight: 600;
+}
+.mainmenu>li>a:hover {font-weight: 800;}
+
+/* 검색창 */
+nav input {width: 200px;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+}
+
+main {width: 100%;
+    height: 800px;
+    margin: 0 auto;
+    background-color: #333;
+}
+
+/* 아이콘 */
+.h-icon {width: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.h-icon>img {width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* ==============슬라이더========= */
+.slider {width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slider>a>img {width: 100%;
+    height: 800px;
+}
+
+/* =============배너 ========*/
+.banner {width: 100%;
+    height: 80px;
+    background-color: rgb(31, 31, 31);
+}
+.textbox {width: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.textbox>ul {display: flex;
+    width: 900px;
+    overflow: hidden;
+    height: 80px;
+}
+.textbox>ul>li {width: 100%;
+    position: relative;
+}
+.textbox>ul>li>a {padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin: 0 auto;
+    transition: all 2s;
+}
+.textbox>ul>li>a >span {margin-right: 50px;}
+.textbox>ul>li>a >p {margin-left: 50px;}
+
+.textbox>ul>li>a:hover {font-weight: 600;}
+/* ========컨텐츠 ===========*/
+.content {width: 100%;
+    height: 900px;
+    margin-top: 200px;
+    background-color: #fff;
+}
+.tab {width: 1200px;
+    height:100%;
+    background-color: #fff;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+    position: relative;
+}
+.tab>li {width: 700px;
+    text-align: center;
+}
+.tab>li>a {font-size: 26px;
+}
+.tab>li>div {position: absolute;
+    top: 80px;
+    left: 0;
+    overflow: hidden;
+    height: 0;
+}
+
+/* active 할당된 태그들 */
+.tab>li.active div {width: 1200px;
+    height: 800px;
+}
+.tab>li.active a {font-size: 30px;
+    font-weight: 600;
+}
+
+/* 이달의 추천 */
+.good {display: flex;
+}
+.best {display: flex;
+}
+.left {position: relative;
+    width: 30%;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.left img {width: 550px;
+    height: 600px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px #d5d5d5;
+}
+.left p {width: 550px;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+.left h1 {width: 550px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+}
+.right {width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 20px;
+}
+.right>li {margin: 20px 10px;
+    position: relative;
+    cursor: pointer;
+}
+.right>li>img {width: 250px;
+    height: 250px;
+    box-shadow: 2px 2px 7px #d5d5d5;
+}
+.right>li>p {width: 250px;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.right>li>h1 {width: 250px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.right>li>h6 {width: 234px;
+    background: linear-gradient(to right,rgba(224, 9, 70,0.8),rgba(251, 171, 110, 0.8));
+    position: absolute;
+    top: 62%;
+    left: 2px;
+    padding: 12px 8px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* =========배경 사진========== */
+.content-02 {width: 100%;
+    height: 800px;
+    background: url(../img/가로6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+/* ========이벤트 슬라이더======= */
+.event {width: 100%;
+    height: 400px;
+}
+.bx-wrapper {max-width: 900px;
+    margin: 0 auto;
+    margin-top: 50px ;
+}
+.bxslider>li:hover {cursor: pointer; opacity: 0.5;}
+
+/* ==========푸터=========== */
+footer {margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-self: center;
+    text-align: center;
+    box-shadow: 2px 2px 10px #d5d5d5;
+}
+footer>img {width: 10%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+footer>ul {width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+footer>ul>li {cursor: pointer;}
+.address {margin-bottom: -60px;}
